@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080"
+    android:id="@+id/idlayout"
+    tools:context=".obra">
+
+    <Button
+        android:id="@+id/botonMenuPrincipal"
+        android:layout_width="177dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#FF5722"
+        android:onClick="menuPrinicpal"
+        android:text="Menú P."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botonAtras3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonInfoObra"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/botonInfoObra"
+        android:layout_width="173dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#FF5722"
+        android:onClick="infoObra"
+        android:text="Detalle"
+        app:layout_constraintBottom_toTopOf="@+id/botonMenuPrincipal"
+        app:layout_constraintEnd_toStartOf="@+id/botonOfertar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenCompleta"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/botonOfertar"
+        android:layout_width="173dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#FF5722"
+        android:onClick="oferta"
+        android:text="Ofertar"
+        app:layout_constraintBottom_toTopOf="@+id/botonAtras3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botonInfoObra"
+        app:layout_constraintTop_toBottomOf="@+id/imagenCompleta"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/botonAtras3"
+        android:layout_width="173dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#FF5722"
+        android:onClick="volver"
+        android:text="Atrás"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botonMenuPrincipal"
+        app:layout_constraintTop_toBottomOf="@+id/botonOfertar"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/imagenCompleta"
+        android:layout_width="411dp"
+        android:layout_height="402dp"
+        app:layout_constraintBottom_toTopOf="@+id/botonInfoObra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
